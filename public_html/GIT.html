@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <title> Website Tutorial</title>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   </head>
+   <!--   <link href="css/main.css" rel="stylesheet" > -->
+   <link href="main.css" rel="stylesheet">
+   <body>
+      Learn How to Build a Website
+      <div class="container-fluid">
+      <div class="row">
+         <nav class="navbar navbar-expand-md
+            justify-content-start
+            bg-dark navbar-dark
+            col-12">
+            <!-- Brand -->
+            <a class="navbar-brand" href="index.html"></a>
+            <!-- Responsive Button for the smaller menu -->
+            <button class="navbar-toggler" type="button"
+               data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+               <ul class="navbar-nav">
+                  <li class="nav-item">
+                     <a class="nav-link" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                  </li>
+                  <li class="nav-item">
+                  </li>
+                  <!-- Dropdown -->
+                  <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                     Products
+                     </a>
+                     <div class="dropdown-menu">
+                        <a class="dropdown-item" href="docker.html">Docker</a>
+                        <a class="dropdown-item" href="azure.html">Azure cloud</a>
+                        <a class="dropdown-item" href="GIT.html">GIT</a>
+                  <li class="nav-item">
+                  <a class="nav-link" href="resources.html">Resources</a>
+                  </li>
+                  </div>
+                  </li>
+               </ul>
+            </div>
+         </nav>
+      </div>
+      <div>
+      </div>
+      <br>
+      <p>
+      <center> <h1>Intro to GIT</h2></center>
+      </p> <br>
+      <p>GIT is most widely used modern version control system in the world today. </p>
+      <br>
+      <h2>
+      Signing up for a new GitHub account
+      </h2>
+      <ul>
+         <br>Visit <a href="https://github.com/login">Sign in to Github</a>
+         <li>create an account with username and password </li>
+         <li> Follow the prompts to create your personal account or organization. </li>
+         <h2> Creating a brand new repository on GitHub</h2>
+         <li> Once you log in click new repository. </li>
+         <li> In the upper-right corner of any page, use the  drop-down menu, and select New repository. </li>
+         <li> For the repo name, type a short title ( ex: IS218 or example_website). </li>
+         <li> add a description of your repository. For example, "My first repository on GitHub." ( Optional) </li>
+         <li> Choose a repository visibility.</li>
+         <li> Select Initialize this repository with a README. </li>
+         <li> Click create repository </li>
+
+         <h2> Creating a brand new repository in the Git Bash </h2>
+         <li> Open the Git Bash.</li>
+         <li> Create a new directory with the same name as your github repository.</li>
+         <li> Transfer to that repository. </li>
+         <li> perform "git init" which will allow you to use git commands.</li>
+         <li> create a README.md file, public_html folder to hold actual website files.</li>
+         <li> For the sake of this tutorial, place an index.html file within the public_html.</li>
+         <img src="images/initialFiles.png" alt="creatingFiles" height = "400px" width = "650px"/>
+         <li> Perform "git status" to see the changes you've made to the repository so far.</li>
+         <img src="images/gitStatus.png" alt="gitStatus" height = "250px" width = "650px"/>
+         <li> Perform "git add ." to prepare to add the files to the repository.</li>
+         <li> Perform "git commit -m "message" " to commit your changes to the repository.</li>
+         <li> Perform "git remote add origin  **your repository link .git**" to connect to your online repository.</li>
+         <img src="images/gitAddCommit.png" alt="creatingFiles" height = "350px" width = "650px"/>
+         <li> Perform "git push --set-upstream origin master" to establish where changes will be sent to in the repository and send in your changes.</li>
+         <li> Future pushes will only need "git push" and if you want to push to a different branch, use "git push --set-upstream origin **your branch**".</li>
+         <img src="images/git push.png" alt="creatingFiles" height = "200px" width = "650px"/>
+         <li> The <a href="docker.html">Docker</a> section will show you how to put your site on Docker, a platform for running apps in containers.</li>
+      </ul>
+      <br><br>
+      <footer class="footer page-footer font-small ">
+         <div class="container">
+            <div class="row">
+               <span class="text-muted">&copy;  2021 -  Terms Of Use  -  Privacy Statement</span>
+            </div>
+         </div>
+      </footer>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+   </body>
+</html>
