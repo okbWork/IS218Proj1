@@ -54,27 +54,25 @@
          </div>
          <br>
          <p>
-         <center> Intro to Azure</center>
+         <center><h1>Intro to Azure</h1></center>
          </p> <br>
-         <p> • Microsoft Azure, commonly referred to as Azure, is a cloud computing service created by Microsoft for building, testing, deploying, and managing applications and services through Microsoft-managed data centers. </p>
+         <p> Microsoft Azure, commonly referred to as Azure, is a cloud computing service created by Microsoft for building, testing, deploying, and managing applications and services through Microsoft-managed data centers. </p>
          <br>
-         <p>
-            <br> Create Your Azure Free Account Today <br>
-            <br>•	Visit <a href="https://azure.microsoft.com/en-us/free/search/">Create your Azure free account today | Microsoft Azure</a>
-            <br>create an account with username and password <br>
-            <br> • Follow the prompts to create your personal account or organization. <br>
-            <br> Docker-Azure integration <br>
-            <br> •	  Log into Azure account<br>
-            <br> •    In the command prompt: $docker login azure  <br>
-            <br> Create an ACI context <br>
-            <br> •	$docker context create aci myacicontext <br>
-            <br> Run a container<br>
-            <br> •	$docker --context myacicontext run -p 80:80 nginx <br>
-            <br> To view logs from your container, run: <br>
-            <br> • $docker logs
-            <CONTAINER_ID>
-         </p>
-         <img src="images/azureLogin.png" alt="azureLogin image"/>
+         <ul>
+            <li> Visit <a href="https://azure.microsoft.com/en-us/free/search/">this site</a> to create an Azure account with username and password.</li>
+            <li> Follow the prompts to create your personal account or organization. </li>
+            <h2> Docker-Azure integration</h2>
+            <li> Log into Azure account.</li>
+            <li> In the command prompt run "docker login azure". this should to take you to a login page.</li>
+            <img src="images/azureLogin.png" alt="azureLogin image"/>
+            <li> Create an ACI context with the command "docker context create aci myacicontext".</li>
+            <img src="images/azureCreateContext.png" alt="azureCreateContext image"/>
+            <li> Running the command "docker --context myacicontext run -p 8080:80 nginx" will now host your site on the internet.</li>
+            <img src="images/azureRun.png" alt="azureRun image"/>
+            <li> To view logs from your container, run: "docker logs **container id**".</li>
+            <img src="images/azure Logs.png" alt="azure Logs image"/>
+         </ul>
+         <h3>And now your website is finished! feel free to go back to the <a href="index.html"> home page </a> if you want to go over the material again </h3>
       </div>
       <footer class="footer page-footer font-small ">
          <div class="container">
