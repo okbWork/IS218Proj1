@@ -58,30 +58,24 @@
          </div>
          <br>
          <p>
-         <center><h1>Docker Orientation</h1></center>
+         <center><h1>Article 3: OOP Fundamentals</h1></center>
          </p> <br>
          <ul>
-         <li><p>Download and install <a href="https://docs.docker.com/get-docker/">Docker</a></p>
-         <li> open a command prompt or bash window</li>
-         <li> create two files: "Dockerfile" and "docker-compose.yml". these files will allow you to host your site in a container</li>
-         <img src="images/dockerComms.png" alt="dockerCommands image" height = "110px" width = "650px"/>
-         <li> use the "vi" command to open a text editor for these two files</li>
-         <div  id="dockerImages">
-           <img src="images/dockerVi.png" alt="dockerVi" height = "60px" width = "650px"/>
-           <img src="images/dockerFile.png" alt="dockerFile"height = "60px" width = "650px"/>
-         </div>
-         <li> put the following code into each</li>
-         <div  id="dockerImages">
-           <img src="images/dockerComposeVi.png" alt="dockerComposeVi"height = "410px" width = "650px"/>
-           <img src="images/dockerfileVi.png" alt="dockerfileVi"height = "410px" width = "650px"/>
-         </div>
-         <li> Start your container using the docker command "docker compose up -d" to run the docker-compose.yml file in that folder.</li>
-         <img src="images/dockerCompose.png" alt="dockerCompose"height = "150px" width = "650px"/>
-         <li> The -d is a flag that allows you to run the container in a detatched form so that you can still use the bash.</li>
-         <li> Your container should be running now, open up a browser and go to "localhost:8080" and you should see your site up and running.</li>
-         <li> The <a href="azure.html">Azure</a> section will show you how to put your site online so anyone on the internet can access it.</li>
-
-         </p>
+         <p>The four principles of Object Oriented Programming help make coding much more efficient	for legitimate use.</p>
+         <li>Encapsulation</li>
+         <p>Encapsulation is using a class to hold objects, data, and methods within the class. When a class is declared, or initialized, the variables that are within the class are Encapsulated An example would be the calculator class Encapsulating a "history" variable that holds lists.</p>
+         <img src="images/CalculatorClass.png" alt="calculator"/>
+         <li>Polymorphism</li>
+         <p>Polymorphism is when the subclasses of one class use similar methods but in different ways. When creating a subclass that may need to use its parent methods in another way, polymorphism is the answer An example would be the Addition, Subtraction, Multiplication, and Division classes all using the same "values" property from the calculator but their own get_result method to complete calculations.</p>
+         <li>Abstraction</li>
+         <p>Abstraction is using as little detail as possible to define a class so its children classes can be more varied. This is extremely useful if you want your subclasses to perform extremely different actions but interact with the same objects An example would be the Calculation class not including a get_result method because all other classes have their own get_result method.</p>
+         <img src="images/additionClass.png" alt="addition"/>
+         <img src="images/MultiplicationClass.png" alt="multiplication"/>
+         <img src="images/divisionClass.png" alt="division"/>
+         <img src="images/SubtractionClass.png" alt="subtraction"/>
+         <li>Inheritance</li>
+         <p>Inheritance is when subclasses use the materials provided by parent class to complete actions. An example would be the Addition, Subtraction, Multiplication, and Division classes all using the same history and values in their classes.</p>
+         <li> The <a href="Article4.html">Fourth Article</a> will show you how to properly separate your programs tasks to help organize your work.</li>
        </ul>
          <footer class="footer page-footer font-small ">
             <div class="container">

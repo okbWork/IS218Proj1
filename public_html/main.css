@@ -8,6 +8,10 @@ body {
     padding: 2em;
     background:url('./images/azure.jpg');
 }
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
 main h1{
     font-size: 150%;
     background-color: #d2faf7;
