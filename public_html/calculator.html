@@ -58,29 +58,47 @@
                </div>
             </nav>
          </div>
-         <div>
+   <div>
          </div>
          <br>
          <p>
-         <center><h1>Intro to Azure</h1></center>
+         <center><h1> How to Implement design patterns - Separation of Concerns </h1></center>
          </p> <br>
-         <p> Microsoft Azure, commonly referred to as Azure, is a cloud computing service created by Microsoft for building, testing, deploying, and managing applications and services through Microsoft-managed data centers. </p>
+         <p> • Separation of concerns is a software architecture design pattern/principle for separating an application into distinct sections, so each section addresses a separate concern. In basics, Separation of concerns is about order. The overall goal of separation of concerns is to establish a well-organized system where each part fulfills a meaningful role.
+ </p>
+      <p>• Separation of concerns is achieved by the establishment of boundaries</p>
+      <p>•	if all of the code for a particular behavior of the application is separated out, then you will only have to change code directly associated with your new feature. Which should be less code to change.</p>
+
          <br>
          <ul>
-            <li> Visit <a href="https://azure.microsoft.com/en-us/free/search/">this site</a> to create an Azure account with username and password.</li>
-            <li> Follow the prompts to create your personal account or organization. </li>
-            <h2> Docker-Azure integration</h2>
-            <li> Log into Azure account.</li>
-            <li> In the command prompt run "docker login azure". this should to take you to a login page.</li>
-            <img src="images/azureLogin.png" alt="azureLogin image"/>
-            <li> Create an ACI context with the command "docker context create aci myacicontext".</li>
-            <img src="images/azureCreateContext.png" alt="azureCreateContext image"/>
-            <li> Running the command "docker --context myacicontext run -p 8080:80 nginx" will now host your site on the internet.</li>
-            <img src="images/azureRun.png" alt="azureRun image"/>
-            <li> To view logs from your container, run: "docker logs **container id**".</li>
-            <img src="images/azure Logs.png" alt="azure Logs image"/>
+
+
+       </li>
+             <h2>Applying SoC to the Calculator Program </h2>
+ <h2> Functions Class  </h2>
+            <li> For each of the calculator's operations, we created function classes. A class for addition, subtraction, multiplication, and division is involved. Having separate classes for these functions simplifies coding significantly. In the history class, for example, each function can simply be called from the class. The functions class, like the calculation class, hides a lot of complexity, making the code simpler and easier to manage.</li>
+             <a href="https://github.com/febyjose12/calc2/blob/static/calculator/operations/addition.py"
+                target="_blank" class="btn btn-primary black-background white">View Code</a
+                 <hr>
+
+  <h2> History Class </h2>
+             <li>We can save the history of the calculations in a list using the history class. This class also allows for the addition of calculations, the clearing of history, and the return of the number of calculations in the history. Other useful functions include determining the value or object type of a specific calculation in the history.</li>
+             <a href="https://github.com/febyjose12/calc2/blob/static/calculator/calculator.py"
+                target="_blank" class="btn btn-primary black-background white">View Code</a
+                 <hr>
+
+  <h2> Calculator Class </h2>
+             <li>The calculator is the final result or the final product that will be used to implement all of the functions written before it. The calculator class will automatically add calculations to a calculator history while also providing other functions such as showing calculation history size and clearing history. Because we used separation of concerns, the final calculator class will appear less complex with potential free of error. </li>
+              <a href="https://github.com/febyjose12/calc2/blob/static/calculator/calculator.py"
+                 target="_blank" class="btn btn-primary black-background white">View Code</a
+                  <hr>
+<h2> Calculation class  </h2>
+             <p><li>Finally, there is a calculation class we created for the calculator program and it is related to calculator class which includes all the value input needed for the calculation. We use this class every time we need to call a function by defining the parameters for the calculator's inputs in one class. This also saves time because we wouldn't have to write the parameter conditions for each function class if we did have this class. This is not only effective, but it also makes each function class appear more complicated than necessary.</li></p>
+
+             <a href="https://github.com/febyjose12/calc2/blob/static/calculator/operations/calculation.py"
+                 target="_blank" class="btn btn-primary black-background white">View Code</a
          </ul>
-         <h3>And now your website is finished! feel free to go back to the <a href="index.html"> home page </a> if you want to go over the material again </h3>
+
       </div>
       <footer class="footer page-footer font-small ">
          <div class="container">

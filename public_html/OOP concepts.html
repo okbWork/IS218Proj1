@@ -47,9 +47,9 @@
                      <a class="nav-link" href="OOP.html">OOP</a>
                      <li class="nav-item">
                      <a class="nav-link" href="AAA Testing.html">AAA Testing</a>
-                     <li class="nav-item">
+                      <li class="nav-item">
                      <a class="nav-link" href="OOP concepts.html">OOP Concepts</a>
-                     <li class="nav-item">
+                      <li class="nav-item">
                      <a class="nav-link" href="calculator.html">Seperation of Concerns</a>
                      </li>
                      </div>
@@ -58,29 +58,36 @@
                </div>
             </nav>
          </div>
-         <div>
+   <div>
          </div>
          <br>
          <p>
-         <center><h1>Intro to Azure</h1></center>
+         <center><h1> Principles of Object-Oriented Programming </h1></center>
          </p> <br>
-         <p> Microsoft Azure, commonly referred to as Azure, is a cloud computing service created by Microsoft for building, testing, deploying, and managing applications and services through Microsoft-managed data centers. </p>
+         <p> •	OOP ( object oriented programing) ,In Python, object-oriented Programming (OOPs) is a programming paradigm that uses objects and classes in programming. It aims to implement real-world entities like inheritance, polymorphisms, encapsulation, etc. in the programming.
+ </p>
          <br>
          <ul>
-            <li> Visit <a href="https://azure.microsoft.com/en-us/free/search/">this site</a> to create an Azure account with username and password.</li>
-            <li> Follow the prompts to create your personal account or organization. </li>
-            <h2> Docker-Azure integration</h2>
-            <li> Log into Azure account.</li>
-            <li> In the command prompt run "docker login azure". this should to take you to a login page.</li>
-            <img src="images/azureLogin.png" alt="azureLogin image"/>
-            <li> Create an ACI context with the command "docker context create aci myacicontext".</li>
-            <img src="images/azureCreateContext.png" alt="azureCreateContext image"/>
-            <li> Running the command "docker --context myacicontext run -p 8080:80 nginx" will now host your site on the internet.</li>
-            <img src="images/azureRun.png" alt="azureRun image"/>
-            <li> To view logs from your container, run: "docker logs **container id**".</li>
-            <img src="images/azure Logs.png" alt="azure Logs image"/>
+
+
+       </li>
+ <h2> Inheritance  </h2>
+            <li> Inheritance is the procedure in which one class inherits the attributes and methods of another class.  The class whose properties are inherited are called Parent class. And the class that inherits the properties from the parent class is the Child class. The interesting thing is, along with the inherited properties and methods, a child class can have its own properties and methods.</li>
+             <li> In Calculator application, this method allows to use the fields and methods from previously existing classes. For example, the addition, subtraction, multiplication, and division classes can inherit the properties of the calculation class. Also, the calculation history class inherits properties from each calculation class. For example, the history class can inherit the properties of the addition and other class functions. This method helps to reduce the confusion and complexity of the program code. </li>
+
+  <h2> Encapsulation </h2>
+            <li> his puts restrictions on accessing variables and methods directly and can prevent the accidental modification of data.</li>
+             <li>In our calculator application, we use encapsulation by establishing classes with their own methods, variables, and functions. The history of calculations is kept in a list, and the history calculation class is provided with a clear history function. Encapsulation prevents a function class, such as the addition class, from clearing the history class's history. The clear history function is only useful for the class for which it was created.</li>
+
+  <h2> Polymorphism </h2>
+            <li> The word polymorphism means having many forms. In programming, polymorphism means the same function name being used for different types.</li>
+             <li>The get result() method in the calculator program is an interesting illustration of polymorphism. The addition, subtraction, multiplication, and division classes all have this function. The get result() function can be used for all of them, despite the fact that they are different classes. This is comparable to how the Python method len() can be used to represent a variety of data types, such as numbers, and lists.</li>
+
+<h2> Abstraction </h2>
+             <li>It is the concept of object-oriented programming that shows only necessary attributes and hides unnecessary information. The main purpose of abstraction is hiding the unnecessary details from the users.</li>
+             <li>Abstraction is selecting data from a larger pool to show only relevant details of the object to the user. So in calculator application,  It helps in reducing programming complexity and efforts. It is one of the most important concepts of OOPs.</li>
          </ul>
-         <h3>And now your website is finished! feel free to go back to the <a href="index.html"> home page </a> if you want to go over the material again </h3>
+
       </div>
       <footer class="footer page-footer font-small ">
          <div class="container">
